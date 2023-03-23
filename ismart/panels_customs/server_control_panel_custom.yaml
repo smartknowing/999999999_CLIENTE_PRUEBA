@@ -1,0 +1,6 @@
+
+  - name: Server Controls
+    url_path: developer-tools/yaml
+    sidebar_title: Server Controls
+    sidebar_icon: mdi:server # https://materialdesignicons.com/
+    module_url: /local/config/ismart/js/panel-redirect.js  # 'local' is '/config/www/'

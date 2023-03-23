@@ -14,6 +14,10 @@
 !id_rsa*
 #SMART
 !ismart/
+!ismart/*/
+
+
+
 
 # Comenta esto si no quieres incluir tus flujos de Node-RED.
 # Esto solo es válido si instala Node-RED como complemento de Home Assistant
