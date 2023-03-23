@@ -12,6 +12,8 @@
 # Comenta estas 2 líneas si no quieres incluir tus llaves SSH
 !.ssh/
 !id_rsa*
+#SMART
+!ismart*
 
 # Comenta esto si no quieres incluir tus flujos de Node-RED.
 # Esto solo es válido si instala Node-RED como complemento de Home Assistant
