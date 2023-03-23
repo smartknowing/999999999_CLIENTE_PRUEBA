@@ -1,0 +1,27 @@
+# ADVERTENCIA: haga que su repositorio de GitHub sea privado si está usando esto tal como está
+# Ejemplo de archivo .gitignore para su directorio de configuración.
+# Un * asegura que todo será ignorado.
+*
+# Puede incluir archivos/carpetas en la lista blanca con !, estos no serán ignorados.
+!*.yaml
+!.gitignore
+!*.md
+!*.sh
+!*.js*
+
+# Comenta estas 2 líneas si no quieres incluir tus llaves SSH
+!.ssh/
+!id_rsa*
+
+# Comenta esto si no quieres incluir tus flujos de Node-RED.
+# Esto solo es válido si instala Node-RED como complemento de Home Assistant
+!nodo-rojo/
+
+# Descomente esto si no quiere incluir secrets.yaml
+secrets.yaml
+
+# Ignorar estos archivos/carpetas
+.storage
+.cloud
+.google.token 
+home-assistant.log

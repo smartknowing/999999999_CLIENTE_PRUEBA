@@ -1,0 +1,72 @@
+
+homeassistant:
+  name: CAMBIAR-NOMBRE-HOUSE            #A~
+  latitude: -0.3261465                  #A~
+  longitude: -78.5358938                #A~
+  unit_system: metric
+  time_zone: "America/Guayaquil"
+  #packages: !include_dir_named ismart/config
+  packages:
+    pack_1: !include_dir_merge_named ismart/config/
+    pack_2: !include_dir_merge_named ismart/principal/Zonas/Interior/Ubicacion/
+    pack_3: !include_dir_merge_named ismart/principal/Zonas/Exterior/Ubicacion/
+
+ ######   #######  ##    ## ######## ####  ######      ####  ######  ##     ##    ###    ########  ######## 
+##    ## ##     ## ###   ## ##        ##  ##    ##      ##  ##    ## ###   ###   ## ##   ##     ##    ##    
+##       ##     ## ####  ## ##        ##  ##            ##  ##       #### ####  ##   ##  ##     ##    ##    
+##       ##     ## ## ## ## ######    ##  ##   ####     ##   ######  ## ### ## ##     ## ########     ##    
+##       ##     ## ##  #### ##        ##  ##    ##      ##        ## ##     ## ######### ##   ##      ##    
+##    ## ##     ## ##   ### ##        ##  ##    ##      ##  ##    ## ##     ## ##     ## ##    ##     ##    
+ ######   #######  ##    ## ##       ####  ######      ####  ######  ##     ## ##     ## ##     ##    ##    
+
+frontend:
+  development_repo: /share/frontend
+  themes: !include_dir_merge_named themes
+  
+
+lovelace:
+  mode: storage
+  dashboards:
+    lovelace-yaml-optimized:
+      mode: yaml
+      title: FloorPlan
+      icon: mdi:home
+      show_in_sidebar: true
+      filename: www/ismart/planos/plano-main.yaml 
+ 
+
+#panel_custom: !include ismart/panels_customs/server_control_panel_custom.yaml
+
+
+
+# Para la configuración del acceso desde 
+#una direccion publica
+#y exista un error de Received X-Forwarded-For header from untrusted prox
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 172.30.33.0/24
+  ip_ban_enabled: true
+  login_attempts_threshold: 5
+
+ ######   #######  ##    ## ######## ####  ######       ######   ######## ##    ## ######## ########     ###    ##       ########  ######  
+##    ## ##     ## ###   ## ##        ##  ##    ##     ##    ##  ##       ###   ## ##       ##     ##   ## ##   ##       ##       ##    ## 
+##       ##     ## ####  ## ##        ##  ##           ##        ##       ####  ## ##       ##     ##  ##   ##  ##       ##       ##       
+##       ##     ## ## ## ## ######    ##  ##   ####    ##   #### ######   ## ## ## ######   ########  ##     ## ##       ######    ######  
+##       ##     ## ##  #### ##        ##  ##    ##     ##    ##  ##       ##  #### ##       ##   ##   ######### ##       ##             ## 
+##    ## ##     ## ##   ### ##        ##  ##    ##     ##    ##  ##       ##   ### ##       ##    ##  ##     ## ##       ##       ##    ## 
+ ######   #######  ##    ## ##       ####  ######       ######   ######## ##    ## ######## ##     ## ##     ## ######## ########  ######  
+
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+
