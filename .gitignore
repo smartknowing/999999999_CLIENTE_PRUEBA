@@ -8,6 +8,9 @@
 !*.md
 !*.sh
 !*.js*
+!*.png*
+!*.svg*
+
 
 # Comenta estas 2 líneas si no quieres incluir tus llaves SSH
 !.ssh/
@@ -18,7 +21,12 @@
 !ismart/*/
 !ismart/**/**/**/**/**/**/**/**/**/
 
-
+#WWW
+!www/
+#!www/**/
+!www/ismart/**/**/**/**/**/**/**/**/
+#!www/ismart/*/
+#!www/ismart/**/**/**/**/**/**/**/**/**/
 
 
 # Comenta esto si no quieres incluir tus flujos de Node-RED.
@@ -26,7 +34,7 @@
 !nodo-rojo/
 
 # Descomente esto si no quiere incluir secrets.yaml
-secrets.yaml
+!secrets.yaml
 
 # Ignorar estos archivos/carpetas
 .storage

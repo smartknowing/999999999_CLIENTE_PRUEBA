@@ -1,0 +1,5 @@
+title: Casa
+#views:
+#  - title: Minimalist
+views:
+  - !include plano-Tercera-planta.yaml
