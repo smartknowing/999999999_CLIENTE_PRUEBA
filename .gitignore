@@ -13,8 +13,10 @@
 !.ssh/
 !id_rsa*
 #SMART
+
 !ismart/
 !ismart/*/
+!ismart/**/**/**/**/**/**/**/**/**/
 
 
 
