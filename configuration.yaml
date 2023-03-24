@@ -1,8 +1,8 @@
 # http://patorjk.com/software/taag/#p=display&f=Banner3&t=Type%20Something%20
 homeassistant:
-  name: CAMBIAR-NOMBRE-HOUSE            #A~
-  latitude: -0.3261465                  #A~
-  longitude: -78.5358938                #A~
+  name: CAMBIAR-NOMBRE-HOUSE            #A
+  latitude: -0.3261465                  #A
+  longitude: -78.5358938                #A
   unit_system: metric
   time_zone: "America/Guayaquil"
   packages:
