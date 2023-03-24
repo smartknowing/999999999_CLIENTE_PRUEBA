@@ -1,30 +1,55 @@
-
+# http://patorjk.com/software/taag/#p=display&f=Banner3&t=Type%20Something%20
 homeassistant:
   name: CAMBIAR-NOMBRE-HOUSE            #A~
   latitude: -0.3261465                  #A~
   longitude: -78.5358938                #A~
   unit_system: metric
   time_zone: "America/Guayaquil"
-  #packages: !include_dir_named ismart/config
   packages:
     pack_1: !include_dir_merge_named ismart/config/
-    pack_2: !include_dir_merge_named ismart/principal/Zonas/Interior/Ubicacion/
-    pack_3: !include_dir_merge_named ismart/principal/Zonas/Exterior/Ubicacion/
-    #Automatizaciones
-    #pack_4: !include_dir_merge_named ismart/automatizaciones-genericas/
+    pack_2: !include_dir_merge_named ismart/servicios/
+    pack_3: !include_dir_merge_named ismart/principal/Zonas/Interior/Ubicacion/
+    pack_4: !include_dir_merge_named ismart/principal/Zonas/Exterior/Ubicacion/
 
- ######   #######  ##    ## ######## ####  ######      ####  ######  ##     ##    ###    ########  ######## 
-##    ## ##     ## ###   ## ##        ##  ##    ##      ##  ##    ## ###   ###   ## ##   ##     ##    ##    
-##       ##     ## ####  ## ##        ##  ##            ##  ##       #### ####  ##   ##  ##     ##    ##    
-##       ##     ## ## ## ## ######    ##  ##   ####     ##   ######  ## ### ## ##     ## ########     ##    
-##       ##     ## ##  #### ##        ##  ##    ##      ##        ## ##     ## ######### ##   ##      ##    
-##    ## ##     ## ##   ### ##        ##  ##    ##      ##  ##    ## ##     ## ##     ## ##    ##     ##    
- ######   #######  ##    ## ##       ####  ######      ####  ######  ##     ## ##     ## ##     ##    ##    
+
+
+######## ########   #######  ##    ## ########    ######## ##    ## ########  
+##       ##     ## ##     ## ###   ##    ##       ##       ###   ## ##     ## 
+##       ##     ## ##     ## ####  ##    ##       ##       ####  ## ##     ## 
+######   ########  ##     ## ## ## ##    ##       ######   ## ## ## ##     ## 
+##       ##   ##   ##     ## ##  ####    ##       ##       ##  #### ##     ## 
+##       ##    ##  ##     ## ##   ###    ##       ##       ##   ### ##     ## 
+##       ##     ##  #######  ##    ##    ##       ######## ##    ## ########  
+
 
 frontend:
   development_repo: /share/frontend
   themes: !include_dir_merge_named themes
   
+
+   ###    ##     ## ########  #######  ##     ##    ###    ######## #### ########    ###     ######  ####  #######  ##    ## ########  ######  
+  ## ##   ##     ##    ##    ##     ## ###   ###   ## ##      ##     ##       ##    ## ##   ##    ##  ##  ##     ## ###   ## ##       ##    ## 
+ ##   ##  ##     ##    ##    ##     ## #### ####  ##   ##     ##     ##      ##    ##   ##  ##        ##  ##     ## ####  ## ##       ##       
+##     ## ##     ##    ##    ##     ## ## ### ## ##     ##    ##     ##     ##    ##     ## ##        ##  ##     ## ## ## ## ######    ######  
+######### ##     ##    ##    ##     ## ##     ## #########    ##     ##    ##     ######### ##        ##  ##     ## ##  #### ##             ## 
+##     ## ##     ##    ##    ##     ## ##     ## ##     ##    ##     ##   ##      ##     ## ##    ##  ##  ##     ## ##   ### ##       ##    ## 
+##     ##  #######     ##     #######  ##     ## ##     ##    ##    #### ######## ##     ##  ######  ####  #######  ##    ## ########  ######  
+
+
+#Cada automatización debe estar en un archivo
+automation generales: !include_dir_list ismart/automatizaciones/generales/
+automation principal: !include_dir_list /ismart/principal/
+automation ui: !include automations.yaml 
+
+
+########  ##          ###    ##    ##  #######     ########  ########  #### ##    ##  ######  #### ########     ###    ##       
+##     ## ##         ## ##   ###   ## ##     ##    ##     ## ##     ##  ##  ###   ## ##    ##  ##  ##     ##   ## ##   ##       
+##     ## ##        ##   ##  ####  ## ##     ##    ##     ## ##     ##  ##  ####  ## ##        ##  ##     ##  ##   ##  ##       
+########  ##       ##     ## ## ## ## ##     ##    ########  ########   ##  ## ## ## ##        ##  ########  ##     ## ##       
+##        ##       ######### ##  #### ##     ##    ##        ##   ##    ##  ##  #### ##        ##  ##        ######### ##       
+##        ##       ##     ## ##   ### ##     ##    ##        ##    ##   ##  ##   ### ##    ##  ##  ##        ##     ## ##       
+##        ######## ##     ## ##    ##  #######     ##        ##     ## #### ##    ##  ######  #### ##        ##     ## ######## 
+
 
 lovelace:
   mode: storage
@@ -40,7 +65,7 @@ lovelace:
 #panel_custom: !include ismart/panels_customs/server_control_panel_custom.yaml
 
 
-
+# http://patorjk.com/software/taag/#p=display&f=Banner3&t=Type%20Something%20
 # Para la configuración del acceso desde 
 #una direccion publica
 #y exista un error de Received X-Forwarded-For header from untrusted prox
@@ -52,12 +77,7 @@ http:
   login_attempts_threshold: 5
   
 
-#Cada automatización debe estar en un archivo
-automation generales: !include_dir_list ismart/automatizaciones/generales/
-automation principal: !include_dir_list /ismart/principal/
 
-# Automations I create in the UI
-automation ui: !include automations.yaml
 
  ######   #######  ##    ## ######## ####  ######       ######   ######## ##    ## ######## ########     ###    ##       ########  ######  
 ##    ## ##     ## ###   ## ##        ##  ##    ##     ##    ##  ##       ###   ## ##       ##     ##   ## ##   ##       ##       ##    ## 

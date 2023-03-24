@@ -1,0 +1,8 @@
+#############################################################################
+#                                                                           #
+#                        Shell Commmand                                     #
+#Los servicios se pueden llamar desde un script o en automatización         #
+############################################################################# 
+
+shell_command:
+  push_to_github: "bash /config/ismart/sh/ismart_gitpush.sh"
