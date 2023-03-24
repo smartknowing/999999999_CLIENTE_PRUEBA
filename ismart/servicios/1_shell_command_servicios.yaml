@@ -5,4 +5,4 @@
 ############################################################################# 
 
 shell_command:
-  push_to_github: "bash /config/ismart/sh/ismart_gitpush.sh"
+  push_to_github: "sh /config/ismart/sh/ismart_gitpush.sh"
