@@ -1,0 +1,13 @@
+alias: Git Push Configuraciones
+id: 0add387f-5d27-40ff-825d-8f9723e7a581
+description: "enviar_la_configuracion_a_github_a_cierta_hora"
+trigger:
+  - platform: time
+    at: "01:00:00"
+action:
+  - service: hassio.addon_stdin
+    data: 
+     addon: a0d7b954_ssh
+     input: /config/ismart/ismart_gitpush.sh
+condition: []
+mode: single

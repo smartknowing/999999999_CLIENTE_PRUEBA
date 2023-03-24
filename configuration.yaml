@@ -10,6 +10,8 @@ homeassistant:
     pack_1: !include_dir_merge_named ismart/config/
     pack_2: !include_dir_merge_named ismart/principal/Zonas/Interior/Ubicacion/
     pack_3: !include_dir_merge_named ismart/principal/Zonas/Exterior/Ubicacion/
+    #Automatizaciones
+    #pack_4: !include_dir_merge_named ismart/automatizaciones-genericas/
 
  ######   #######  ##    ## ######## ####  ######      ####  ######  ##     ##    ###    ########  ######## 
 ##    ## ##     ## ###   ## ##        ##  ##    ##      ##  ##    ## ###   ###   ## ##   ##     ##    ##    
@@ -48,6 +50,14 @@ http:
     - 172.30.33.0/24
   ip_ban_enabled: true
   login_attempts_threshold: 5
+  
+
+#Cada automatización debe estar en un archivo
+automation generales: !include_dir_list ismart/automatizaciones/generales/
+automation principal: !include_dir_list /ismart/principal/
+
+# Automations I create in the UI
+automation ui: !include automations.yaml
 
  ######   #######  ##    ## ######## ####  ######       ######   ######## ##    ## ######## ########     ###    ##       ########  ######  
 ##    ## ##     ## ###   ## ##        ##  ##    ##     ##    ##  ##       ###   ## ##       ##     ##   ## ##   ##       ##       ##    ## 
@@ -65,7 +75,7 @@ default_config:
 tts:
   - platform: google_translate
 
-automation: !include automations.yaml
+
 script: !include scripts.yaml
 scene: !include scenes.yaml
 
