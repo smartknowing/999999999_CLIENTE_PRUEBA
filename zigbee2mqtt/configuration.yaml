@@ -1,0 +1,31 @@
+# https://jsfiddle.net/domojota/9kfhrg67/latest/
+homeassistant: true
+# Minimal configuration.yml example
+permit_join: false
+mqtt:
+  server: mqtt://localhost:1883
+serial:
+  #port: /dev/serial/by-id/usb-Texas_Instruments_TI_CC2531_USB_CDC___0X00124B001CDD4638-if00
+  port: /dev/ttyACM0
+# Will run frontend on port 8080
+frontend: true
+advanced:
+  pan_id: 52409
+  channel: 11
+  network_key:
+    - 192
+    - 26
+    - 101
+    - 146
+    - 145
+    - 163
+    - 19
+    - 113
+    - 174
+    - 57
+    - 48
+    - 118
+    - 5
+    - 217
+    - 64
+    - 113
