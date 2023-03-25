@@ -1,14 +1,13 @@
-# https://jsfiddle.net/domojota/9kfhrg67/latest/
 homeassistant: true
-# Minimal configuration.yml example
 permit_join: false
 mqtt:
-  server: mqtt://localhost:1883
+  server: mqtt://core-mosquitto:1883
+  user: addons
+  password: xusa0zainoob2noo7ahl0pohGh9ahkaapah2Jae2xah0vae3Ik3aegheobeida1i
 serial:
-  #port: /dev/serial/by-id/usb-Texas_Instruments_TI_CC2531_USB_CDC___0X00124B001CDD4638-if00
   port: /dev/ttyACM0
-# Will run frontend on port 8080
-frontend: true
+frontend:
+  port: 8099
 advanced:
   pan_id: 52409
   channel: 11
@@ -29,3 +28,8 @@ advanced:
     - 217
     - 64
     - 113
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+device_options:
+  legacy: false
