@@ -1,0 +1,13 @@
+alias: Desactivar emparejamiento ZigBee
+id: b91ef47d-867f-4988-8cd1-3d56040e63b6
+trigger:
+  - platform: state
+    entity_id: input_boolean.zigbee_permit_join
+    to: 'off'
+action:
+  - service: mqtt.publish
+    data:
+      topic: zigbee2mqtt/bridge/config/permit_join
+      payload: 'false'
+condition: []
+mode: single

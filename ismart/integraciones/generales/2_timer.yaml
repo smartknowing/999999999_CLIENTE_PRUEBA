@@ -1,3 +1,4 @@
-zigbee_permiter_join:
-    name: Tiempo Restante
-    duration: 600
+timer:
+  zigbee_permitir_join:
+      name: Tiempo Restante
+      duration: 600

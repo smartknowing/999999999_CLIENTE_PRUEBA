@@ -1,0 +1,13 @@
+alias: Activar emparejamiento ZigBee
+id: 3248ed69-c751-42e6-8667-a4ea1fbee20e
+trigger:
+  - platform: state
+    entity_id: input_boolean.zigbee_permit_join
+    to: 'on'
+action:
+  - service: mqtt.publish
+    data:
+      topic: zigbee2mqtt/bridge/config/permit_join
+      payload: 'true'
+condition: []
+mode: single

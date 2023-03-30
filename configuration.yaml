@@ -1,4 +1,6 @@
 # http://patorjk.com/software/taag/#p=display&f=Banner3&t=Type%20Something%20
+#Generacion de codigo uuid
+#https://www.uuidgenerator.net/
 homeassistant:
   name: CAMBIAR-NOMBRE-HOUSE            #A
   latitude: -0.3261465                  #A
