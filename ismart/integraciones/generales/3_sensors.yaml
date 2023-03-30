@@ -1,5 +1,7 @@
-sensor:
-    - platform: mqtt
+
+mqtt:
+  sensor:
+    - state_topic: "zigbee2mqtt/bridge/state"
       name: Estado del puente
-      state_topic: "zigbee2mqtt/bridge/state"
       icon: mdi:router:wireless
+      value_template: "{{ value_json.state }}"
