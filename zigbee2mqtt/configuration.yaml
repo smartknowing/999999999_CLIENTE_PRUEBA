@@ -1,6 +1,7 @@
 homeassistant: true
 permit_join: false
 mqtt:
+  base_topic: zigbee2mqtt
   server: mqtt://core-mosquitto:1883
   user: addons
   password: xusa0zainoob2noo7ahl0pohGh9ahkaapah2Jae2xah0vae3Ik3aegheobeida1i
