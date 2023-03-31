@@ -17,7 +17,7 @@ script:
         topic: zigbee2mqtt/bridge/request/device/rename
         payload_template: "{\n  \"from\": \"{{ states.input_text.zigbee2mqtt_old_name.state\
           \ | string }}\",\n  \"to\": \"{{ states.input_text.zigbee2mqtt_new_name.state\
-          \ | string }}\"\n}"
+          \ | string }}\", \n \"homeassistant_rename\":true\n}"
 
 
 ######## ##       #### ##     ## #### ##    ##    ###    ########     ########  ####  ######  ########   #######   ######  #### ######## #### ##     ##  #######     ########  #######  ##     ## 
