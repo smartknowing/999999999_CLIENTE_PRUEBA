@@ -25,6 +25,9 @@
 !www/
 !www/ismart/**/**/**/**/**/**/**/**/
 
+#
+!ui_lovelace_minimalist/
+!ui_lovelace_minimalist/**/**/**/**/**/**/**/**/
 #zigbee2mqtt
 !zigbee2mqtt/
 
