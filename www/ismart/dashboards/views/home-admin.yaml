@@ -1,0 +1,123 @@
+  - title: "Example View2"
+    path: "path21"
+    icon: "mdi:access-point"
+    cards:
+      - type: vertical-stack
+        cards:
+            - type: "custom:button-card"
+              template: "card_esh_welcome"
+              triggers_update: "input_boolean.minimalist_dropdown"
+              variables:
+                ulm_card_esh_welcome_collapse: input_boolean.minimalist_dropdown
+                ulm_weather: "weather.openweathermap"
+                entity_1:
+                  nav: "house"
+                  icon: "mdi:home"
+                  name: "House"
+                  color: "blue"
+                entity_2:
+                  nav: "lights"
+                  icon: "mdi:lightbulb"
+                  name: "Lights"
+                  color: "yellow"
+                entity_3:
+                  nav: "security"
+                  icon: "mdi:shield"
+                  name: Secure
+                  color: "green"
+                entity_4:
+                  nav: "network"
+                  icon: "mdi:nas"
+                  name: Lab
+                  color: "purple"
+                entity_5:
+                  nav: "network"
+                  icon: "mdi:flask"
+                  name: Lab
+                  color: "red"
+                  
+            - type: 'custom:button-card'
+              template: card_title
+              name: Sistema
+              
+            - type: 'custom:button-card'
+              template: card_generic
+              entity: sensor.uptime
+              variables:
+                ulm_card_generic_name: I-SMART UP
+                ulm_card_generic_icon: mdi:home-assistant
+
+            - type: 'custom:button-card'
+              template: card_title
+              name: Luces
+              #TODO en el programa de python debe contruir esto dependiento
+              #las areas 
+            - type: entities
+              show_header_toggle: false
+              entities:
+                - entity: switch.grupo_demo_switch          
+                  name: Cuarto 1
+                  icon: mdi:lightbulb
+                  tap_action:
+                    action: none
+                - entity: switch.grupo_demo_switch          
+                  name: Cuarto 2
+                  icon: mdi:lightbulb
+                  tap_action:
+                    action: none
+                  
+
+
+
+
+                    
+                  
+      - type: vertical-stack
+        cards:
+            - type: "custom:button-card"
+              template: "card_esh_welcome"
+              triggers_update: "input_boolean.minimalist_dropdown"
+              variables:
+                ulm_card_esh_welcome_collapse: input_boolean.minimalist_dropdown
+                ulm_weather: "weather.openweathermap"
+                entity_1:
+                  nav: "house"
+                  icon: "mdi:home"
+                  name: "House"
+                  color: "blue"
+                entity_2:
+                  nav: "lights"
+                  icon: "mdi:lightbulb"
+                  name: "Lights"
+                  color: "yellow"
+                entity_3:
+                  nav: "security"
+                  icon: "mdi:shield"
+                  name: Secure
+                  color: "green"
+                entity_4:
+                  nav: "network"
+                  icon: "mdi:nas"
+                  name: Lab
+                  color: "purple"
+                entity_5:
+                  nav: "network"
+                  icon: "mdi:flask"
+                  name: Lab
+                  color: "red"
+
+
+              
+                  
+            - type: 'custom:button-card'
+              template: card_title
+              name: Sistema
+            - type: 'custom:button-card'
+              template: card_generic
+              entity: sensor.uptime
+              variables:
+                ulm_card_generic_name: I-SMART UP
+                ulm_card_generic_icon: mdi:home-assistant
+
+
+              

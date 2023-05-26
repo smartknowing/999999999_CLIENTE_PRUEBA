@@ -75,10 +75,21 @@ lovelace:
 ########  ##     ##  ######  ##     ## ########   #######  ##     ## ##     ## ########     ##     ## #### ##    ## #### ##     ## ##     ## ######## ####  ######     ##    ##     ## 
 
 # Se esta utilizando https://ui-lovelace-minimalist.github.io/UI/setup/configuration/#yaml-mode
-# la ruta donde se deben agregar las view es en
+# la ruta donde se deben agregar las view es en /config/www/ismart/dashboards/views/
 
 #panel_custom: !include ismart/panels_customs/server_control_panel_custom.yaml
 
+
+ ######  ######## ##    ##  ######   #######  ########  ########  ######     ########  ######## ##     ##  #######  
+##    ## ##       ###   ## ##    ## ##     ## ##     ## ##       ##    ##    ##     ## ##       ###   ### ##     ## 
+##       ##       ####  ## ##       ##     ## ##     ## ##       ##          ##     ## ##       #### #### ##     ## 
+ ######  ######   ## ## ##  ######  ##     ## ########  ######    ######     ##     ## ######   ## ### ## ##     ## 
+      ## ##       ##  ####       ## ##     ## ##   ##   ##             ##    ##     ## ##       ##     ## ##     ## 
+##    ## ##       ##   ### ##    ## ##     ## ##    ##  ##       ##    ##    ##     ## ##       ##     ## ##     ## 
+ ######  ######## ##    ##  ######   #######  ##     ## ########  ######     ########  ######## ##     ##  #######  
+
+switch:
+  - platform: demo
 
 # http://patorjk.com/software/taag/#p=display&f=Banner3&t=Type%20Something%20
 # Para la configuración del acceso desde 
