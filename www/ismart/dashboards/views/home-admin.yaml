@@ -39,7 +39,7 @@
             - type: 'custom:button-card'
               template: card_title
               name: Sistema
-              
+
             - type: 'custom:button-card'
               template: card_generic
               entity: sensor.uptime
@@ -47,13 +47,12 @@
                 ulm_card_generic_name: I-SMART UP
                 ulm_card_generic_icon: mdi:home-assistant
 
-            - type: 'custom:button-card'
-              template: card_title
-              name: Luces
+                
               #TODO en el programa de python debe contruir esto dependiento
               #las areas 
             - type: entities
-              show_header_toggle: false
+              title: Luces de Casa    
+              show_header_toggle: true
               entities:
                 - entity: switch.grupo_demo_switch          
                   name: Cuarto 1
@@ -65,7 +64,31 @@
                   icon: mdi:lightbulb
                   tap_action:
                     action: none
-                  
+                - entity: switch.grupo_demo_switch          
+                  name: Cuarto 3
+                  icon: mdi:lightbulb
+                  tap_action:
+                    action: none
+                - entity: switch.grupo_demo_switch          
+                  name: Cuarto 4
+                  icon: mdi:lightbulb
+                  tap_action:
+                    action: none
+                - entity: switch.grupo_demo_switch          
+                  name: Cuarto 5
+                  icon: mdi:lightbulb
+                  tap_action:
+                    action: none
+                - entity: switch.grupo_demo_switch          
+                  name: Cuarto 6
+                  icon: mdi:lightbulb
+                  tap_action:
+                    action: none                    
+                - entity: switch.grupo_demo_switch          
+                  name: Cuarto 7
+                  icon: mdi:lightbulb
+                  tap_action:
+                    action: none                    
 
 
 
@@ -75,49 +98,65 @@
       - type: vertical-stack
         cards:
             - type: "custom:button-card"
-              template: "card_esh_welcome"
-              triggers_update: "input_boolean.minimalist_dropdown"
+              template: custom_card_nik_clock
               variables:
-                ulm_card_esh_welcome_collapse: input_boolean.minimalist_dropdown
-                ulm_weather: "weather.openweathermap"
-                entity_1:
-                  nav: "house"
-                  icon: "mdi:home"
-                  name: "House"
-                  color: "blue"
-                entity_2:
-                  nav: "lights"
-                  icon: "mdi:lightbulb"
-                  name: "Lights"
-                  color: "yellow"
-                entity_3:
-                  nav: "security"
-                  icon: "mdi:shield"
-                  name: Secure
-                  color: "green"
-                entity_4:
-                  nav: "network"
-                  icon: "mdi:nas"
-                  name: Lab
-                  color: "purple"
-                entity_5:
-                  nav: "network"
-                  icon: "mdi:flask"
-                  name: Lab
-                  color: "red"
+                ulm_custom_card_nik_clock_switch: input_boolean.menu_tablet
+                ulm_custom_card_nik_clock_switch_enable: false
+    
+            - type: horizontal-stack
+              cards:
+                - type: 'custom:button-card'
+                  template: card_person
+                  entity: person.woman1demo
+                  variables:
+                    ulm_card_person_entity: person.woman1demo
+                    ulm_card_person_use_entity_picture: true
+                    ulm_card_person_icon: mdi:face-woman
+                  tap_action:
+                        action: none
+                        
+                - type: 'custom:button-card'
+                  template: card_person
+                  entity: person.man1demo
+                  variables:
+                    ulm_card_person_entity: person.man1demo
+                    ulm_card_person_use_entity_picture: true
+                    ulm_card_person_icon: mdi:face-woman
+                  tap_action:
+                        action: none
+    
+            - type: horizontal-stack
+              cards:
+                - type: 'custom:button-card'
+                  template: card_person
+                  entity: person.children1demos
+                  variables:
+                    ulm_card_person_entity: person.children1demos
+                    ulm_card_person_use_entity_picture: true
+                    ulm_card_person_icon: mdi:face-woman
+                  tap_action:
+                        action: none
+                        
+
+                        
 
 
-              
-                  
-            - type: 'custom:button-card'
-              template: card_title
-              name: Sistema
-            - type: 'custom:button-card'
-              template: card_generic
-              entity: sensor.uptime
+
+
+      - type: vertical-stack
+        cards:
+            - type: "custom:button-card"
+              template: card_weather
+              entity: weather.openweathermap
               variables:
-                ulm_card_generic_name: I-SMART UP
-                ulm_card_generic_icon: mdi:home-assistant
-
-
-              
+                ulm_card_weather_name: " "
+                ulm_card_weather_primary_info:
+                  - wind_speed
+                  - precipitation_probability
+                ulm_card_weather_backdrop:
+                  fade: true
+                #ulm_card_weather_custom:
+                #  - temp: sensor.sensor_temperatura_humedad_de_la_sala_temperature
+                tap_action_action: none
+              tap_action:
+                action: none
