@@ -1,6 +1,6 @@
-  - title: "Example View2"
-    path: "path21"
-    icon: "mdi:access-point"
+  - title: "Casa Administrador"
+    path: "home-admin"
+    icon: "mdi:home-account"
     cards:
       - type: vertical-stack
         cards:
@@ -10,10 +10,11 @@
               variables:
                 ulm_card_esh_welcome_collapse: input_boolean.minimalist_dropdown
                 ulm_weather: "weather.openweathermap"
+                ulm_language: "es"
                 entity_1:
-                  nav: "house"
+                  nav: "plano-tercera-planta"
                   icon: "mdi:home"
-                  name: "House"
+                  name: "Plano"
                   color: "blue"
                 entity_2:
                   nav: "lights"
@@ -148,6 +149,8 @@
             - type: "custom:button-card"
               template: card_weather
               entity: weather.openweathermap
+              tap_action:
+                        action: none
               variables:
                 ulm_card_weather_name: " "
                 ulm_card_weather_primary_info:
@@ -157,6 +160,3 @@
                   fade: true
                 #ulm_card_weather_custom:
                 #  - temp: sensor.sensor_temperatura_humedad_de_la_sala_temperature
-                tap_action_action: none
-              tap_action:
-                action: none

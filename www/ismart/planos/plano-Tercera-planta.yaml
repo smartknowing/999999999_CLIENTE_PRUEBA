@@ -1,7 +1,7 @@
-theme: Backend-selected
-title: Casa
-path: casa
-icon: mdi:home
+#theme: Backend-selected
+title: Plano
+path: plano-tercera-planta
+icon: mdi:floor-plan
 type: panel
 panel: true
 badges: []
