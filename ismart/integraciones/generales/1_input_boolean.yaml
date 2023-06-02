@@ -23,3 +23,6 @@ input_boolean:
 ##     ## #### ##    ## #### ##     ## ##     ## ######## ####  ######     ##    ##     ##    ########  ##     ##  #######  ##        ########   ###  ###   #######  ##    ##    
   minimalist_dropdown:
     name: DropDown Panel Minimalista
+ 
+  minimalist_dropdown_room_master:
+    name: DropDown Panel Minimalista Room Master

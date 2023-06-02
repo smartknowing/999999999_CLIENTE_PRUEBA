@@ -1,0 +1,78 @@
+- name: Scene Demo Buenos Dias
+  id: scene_demo_buenos_dias
+  icon: "mdi:weather-sunny"
+  entities:
+    switch.decorative_lights: "on"
+    switch.ac: "on"
+
+- name: Scene Demo Buenas Noches
+  id: scene_demo_buenas_noches
+  icon: "mdi:moon-waning-crescent"
+  entities:
+    switch.decorative_lights: "off"
+    switch.ac: "off"
+    
+- name: Scene Demo Luces Apagadas
+  id: scene_demo_luces_apagadas
+  icon: "mdi:lightbulb-off"
+  entities:
+    switch.decorative_lights: "off"
+    switch.ac: "off"
+    
+- name: Scene Demo Ausente
+  id: scene_demo_ausente
+  icon: "mdi:home-export-outline"
+  entities:
+    switch.decorative_lights: "off"
+    switch.ac: "off"
+
+- name: Scene En Casa
+  id: scene_en_casa
+  icon: "mdi:home-heart"
+  entities:
+    switch.decorative_lights: "on"
+    switch.ac: "on"
+    
+
+########   #######   #######  ##     ## 
+##     ## ##     ## ##     ## ###   ### 
+##     ## ##     ## ##     ## #### #### 
+########  ##     ## ##     ## ## ### ## 
+##   ##   ##     ## ##     ## ##     ## 
+##    ##  ##     ## ##     ## ##     ## 
+##     ##  #######   #######  ##     ## 
+
+- name: Scene Room Demo Buenos Dias
+  id: scene_room_demo_buenos_dias
+  icon: "mdi:weather-sunny"
+  entities:
+    switch.decorative_lights: "on"
+    switch.ac: "on"
+
+- name: Scene Room Demo Buenas Noches
+  id: scene_room_demo_buenas_noches
+  icon: "mdi:moon-waning-crescent"
+  entities:
+    switch.decorative_lights: "off"
+    switch.ac: "off"
+    
+- name: Scene Room Demo Luces Apagadas
+  id: scene_room_demo_luces_apagadas
+  icon: "mdi:lightbulb-off"
+  entities:
+    switch.decorative_lights: "off"
+    switch.ac: "off"
+    
+- name: Scene Room Demo Ausente
+  id: scene_room_demo_ausente
+  icon: "mdi:home-export-outline"
+  entities:
+    switch.decorative_lights: "off"
+    switch.ac: "off"
+
+- name: Scene Room En Casa
+  id: scene_room_en_casa
+  icon: "mdi:home-heart"
+  entities:
+    switch.decorative_lights: "on"
+    switch.ac: "on"

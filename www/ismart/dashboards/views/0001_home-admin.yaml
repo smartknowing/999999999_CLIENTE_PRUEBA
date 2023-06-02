@@ -17,9 +17,9 @@
                   name: "Plano"
                   color: "blue"
                 entity_2:
-                  nav: "lights"
-                  icon: "mdi:lightbulb"
-                  name: "Lights"
+                  nav: "habitacion-master"
+                  icon: "mdi:crown"
+                  name: "Hab."
                   color: "yellow"
                 entity_3:
                   nav: "security"
@@ -138,9 +138,34 @@
                   tap_action:
                         action: none
                         
-
-                        
-
+            - type: "custom:button-card"
+              template: "card_scenes_welcome"
+              variables:
+                entity_1:
+                  entity_id: scene.scene_demo_buenos_dias
+                  icon: "mdi:weather-sunny" 
+                  name: "Buen Dia" 
+                  color: "yellow"
+                entity_2:
+                  entity_id: scene.scene_demo_buenas_noches
+                  icon: "mdi:moon-waning-crescent"
+                  name: "Zzzz.."
+                  color: "purple"
+                entity_3:
+                  entity_id: scene.scene_demo_luces_apagadas
+                  icon: "mdi:lightbulb-off" 
+                  name: "Apagadas" 
+                  color: "blue"
+                entity_4:
+                  entity_id: scene.scene_demo_ausente
+                  icon: "mdi:home-export-outline" 
+                  name: "Ausente" 
+                  color: "red"                        
+                entity_5:
+                  entity_id: scene.scene_en_casa
+                  icon: "mdi:home-heart" 
+                  name: "En casa" 
+                  color: "pink" 
 
 
 
