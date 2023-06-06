@@ -1,9 +1,15 @@
-  - title: "Habitacion Master"
-    path: "habitacion-master"
-    icon: "mdi:crown"
+  - title: "Estudio"
+    path: "estudio"
+    icon: "mdi:book-open-variant"
     cards:
       - type: vertical-stack
         cards:
+            - type: "custom:button-card"
+              template: custom_card_nik_clock
+              variables:
+                ulm_custom_card_nik_clock_switch: input_boolean.menu_tablet
+                ulm_custom_card_nik_clock_switch_enable: false
+                
             - type: "custom:button-card"
               template: "card_welcome_scenes"
               triggers_update: "input_boolean.minimalist_dropdown_room_master"
@@ -36,6 +42,25 @@
                   icon: "mdi:home-heart" 
                   name: "En casa" 
                   color: "pink"
-                  
+       
+              #TODO en el programa de python debe contruir esto dependiento
+              #las areas 
+            - type: entities
+              title: Luces Estudio    
+              show_header_toggle: true
+              entities:
+                - entity: switch.grupo_demo_switch          
+                  name: Luz Directa 1 
+                  icon: mdi:lightbulb
+                  tap_action:
+                    action: none
+                - entity: switch.grupo_demo_switch          
+                  name: Luz Directa 2 
+                  icon: mdi:led-strip
+                  tap_action:
+                    action: none
+                    
+
+
 
 

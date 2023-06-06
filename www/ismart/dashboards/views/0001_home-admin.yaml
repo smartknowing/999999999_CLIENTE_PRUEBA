@@ -17,20 +17,20 @@
                   name: "Plano"
                   color: "blue"
                 entity_2:
+                  nav: "sala-de-estar"
+                  icon: "mdi:sofa"
+                  name: Sala
+                  color: "green"
+                entity_3:
+                  nav: "estudio"
+                  icon: "mdi:book-open-variant"
+                  name: Estudio
+                  color: "purple"
+                entity_4:
                   nav: "habitacion-master"
                   icon: "mdi:crown"
                   name: "Hab."
                   color: "yellow"
-                entity_3:
-                  nav: "security"
-                  icon: "mdi:shield"
-                  name: Secure
-                  color: "green"
-                entity_4:
-                  nav: "network"
-                  icon: "mdi:nas"
-                  name: Lab
-                  color: "purple"
                 entity_5:
                   nav: "network"
                   icon: "mdi:flask"
