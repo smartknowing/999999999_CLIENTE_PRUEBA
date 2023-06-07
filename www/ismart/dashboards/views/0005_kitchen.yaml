@@ -61,6 +61,8 @@
                     action: none
                     
 
-
-
+      - type: vertical-stack
+        cards:
+            - type: shopping-list
+              title: Lista de Compras
 
