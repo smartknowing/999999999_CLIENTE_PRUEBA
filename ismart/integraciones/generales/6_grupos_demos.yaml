@@ -9,9 +9,11 @@
 
 # Example configuration.yaml entry
 switch:
-  - platform: group
-    name: Grupo Demo Switch
-    unique_id: grupo_demo_switch
-    entities:
-      - switch.ac
-      - switch.decorative_lights
+- platform: group
+  name: grupo_demo_switch
+  entities:
+    - switch.ac
+    - switch.decorative_lights
+    
+
+    

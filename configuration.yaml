@@ -11,8 +11,10 @@ homeassistant:
     pack_1: !include_dir_merge_named ismart/config/
     pack_2: !include_dir_merge_named ismart/servicios/
     pack_3: !include_dir_merge_named ismart/integraciones/
-    pack_4: !include_dir_merge_named ismart/principal/Zonas/Interior/Ubicacion/
-    pack_5: !include_dir_merge_named ismart/principal/Zonas/Exterior/Ubicacion/
+    pack_5: !include_dir_merge_named ismart/principal/Zonas/Interior/
+    pack_6: !include_dir_merge_named ismart/principal/Zonas/Exterior/
+    pack_7: !include_dir_merge_named ismart/principal/Zonas/Interior/Ubicacion/
+    pack_8: !include_dir_merge_named ismart/principal/Zonas/Exterior/Ubicacion/
 
 
 
