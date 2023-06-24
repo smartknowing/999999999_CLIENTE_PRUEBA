@@ -1,187 +1,149 @@
-- title: "Casa Administrador"
-  path: "home-admin"
-  icon: "mdi:home-account"
+- title: Casa Administrador
+  path: casa_administrador
+  icon: mdi:home-account
   cards:
-    - type: vertical-stack
+  - type: vertical-stack
+    cards:
+    - type: custom:button-card
+      template: card_esh_welcome
+      triggers_update: input_boolean.minimalist_dropdown
+      variables:
+        ulm_card_esh_welcome_collapse: input_boolean.minimalist_dropdown
+        ulm_weather: weather.openweathermap
+        ulm_language: es
+        entity_1:
+          nav: plano-tercera-planta
+          icon: mdi:home
+          name: Plano
+          color: blue
+        entity_2:
+          nav: sala
+          icon: mdi:sofa
+          name: Sala
+          color: green
+        entity_3:
+          nav: estudio
+          icon: mdi:sofa
+          name: Estudio
+          color: purple
+        entity_4:
+          nav: cocina
+          icon: mdi:sofa
+          name: Cocina
+          color: yellow
+        entity_5:
+          nav: banio
+          icon: mdi:sofa
+          name: Banio
+          color: red
+    - type: custom:button-card
+      template: card_title
+      name: Sistema
+    - type: custom:button-card
+      template: card_generic
+      entity: sensor.uptime
+      variables:
+        ulm_card_generic_name: I-SMART UP
+        ulm_card_generic_icon: mdi:home-assistant
+    - type: entities
+      title: Luces de Zona
+      show_header_toggle: false
+      entities:
+      - entity: switch.grupo_demo_switch
+        name: Luces Exterior
+        icon: mdi:lightbulb-group
+        tap_action:
+          action: none
+      - entity: switch.grupo_demo_switch
+        name: Luces Interior
+        icon: mdi:lightbulb-group
+        tap_action:
+          action: none
+    - type: entities
+      title: "Luces por Ubicaci\xF3n"
+      show_header_toggle: false
+      entities:
+      - entity: switch.grupo_demo_switch
+        name: Luces Exterior Planta-baja
+        icon: mdi:lightbulb-group
+        tap_action:
+          action: none
+      - entity: switch.grupo_demo_switch
+        name: Luces Exterior Segunda-planta
+        icon: mdi:lightbulb-group
+        tap_action:
+          action: none
+      - entity: switch.grupo_demo_switch
+        name: Luces Exterior Tercera-planta
+        icon: mdi:lightbulb-group
+        tap_action:
+          action: none
+      - entity: switch.grupo_demo_switch
+        name: Luces Interior Segunda-planta
+        icon: mdi:lightbulb-group
+        tap_action:
+          action: none
+  - type: vertical-stack
+    cards:
+    - type: custom:button-card
+      template: custom_card_nik_clock
+      variables:
+        ulm_custom_card_nik_clock_switch: input_boolean.menu_tablet
+        ulm_custom_card_nik_clock_switch_enable: 'false'
+    - type: horizontal-stack
       cards:
-          - type: "custom:button-card"
-            template: "card_esh_welcome"
-            triggers_update: "input_boolean.minimalist_dropdown"
-            variables:
-              ulm_card_esh_welcome_collapse: input_boolean.minimalist_dropdown
-              ulm_weather: "weather.openweathermap"
-              ulm_language: "es"
-              entity_1:
-                nav: "plano-tercera-planta"
-                icon: "mdi:home"
-                name: "Plano"
-                color: "blue"
-              entity_2:
-                nav: "sala-de-estar"
-                icon: "mdi:sofa"
-                name: Sala
-                color: "green"
-              entity_3:
-                nav: "estudio"
-                icon: "mdi:book-open-variant"
-                name: Estudio
-                color: "purple"
-              entity_4:
-                nav: "habitacion-master"
-                icon: "mdi:crown"
-                name: "Hab."
-                color: "yellow"
-              entity_5:
-                nav: "network"
-                icon: "mdi:flask"
-                name: Lab
-                color: "red"
-                
-          - type: 'custom:button-card'
-            template: card_title
-            name: Sistema
-
-          - type: 'custom:button-card'
-            template: card_generic
-            entity: sensor.uptime
-            variables:
-              ulm_card_generic_name: I-SMART UP
-              ulm_card_generic_icon: mdi:home-assistant
-
-              
-            #TODO en el programa de python debe contruir esto dependiento
-            #las areas 
-          - type: entities
-            title: Luces de Casa    
-            show_header_toggle: true
-            entities:
-              - entity: switch.grupo_demo_switch          
-                name: Cuarto 1
-                icon: mdi:lightbulb
-                tap_action:
-                  action: none
-              - entity: switch.grupo_demo_switch          
-                name: Cuarto 2
-                icon: mdi:lightbulb
-                tap_action:
-                  action: none
-              - entity: switch.grupo_demo_switch          
-                name: Cuarto 3
-                icon: mdi:lightbulb
-                tap_action:
-                  action: none
-              - entity: switch.grupo_demo_switch          
-                name: Cuarto 4
-                icon: mdi:lightbulb
-                tap_action:
-                  action: none
-              - entity: switch.grupo_demo_switch          
-                name: Cuarto 5
-                icon: mdi:lightbulb
-                tap_action:
-                  action: none
-              - entity: switch.grupo_demo_switch          
-                name: Cuarto 6
-                icon: mdi:lightbulb
-                tap_action:
-                  action: none                    
-              - entity: switch.grupo_demo_switch          
-                name: Cuarto 7
-                icon: mdi:lightbulb
-                tap_action:
-                  action: none                    
-
-
-
-
-                  
-                
-    - type: vertical-stack
-      cards:
-          - type: "custom:button-card"
-            template: custom_card_nik_clock
-            variables:
-              ulm_custom_card_nik_clock_switch: input_boolean.menu_tablet
-              ulm_custom_card_nik_clock_switch_enable: false
-  
-          - type: horizontal-stack
-            cards:
-              - type: 'custom:button-card'
-                template: card_person
-                entity: person.woman1demo
-                variables:
-                  ulm_card_person_entity: person.woman1demo
-                  ulm_card_person_use_entity_picture: true
-                  ulm_card_person_icon: mdi:face-woman
-                tap_action:
-                      action: none
-                      
-              - type: 'custom:button-card'
-                template: card_person
-                entity: person.man1demo
-                variables:
-                  ulm_card_person_entity: person.man1demo
-                  ulm_card_person_use_entity_picture: true
-                  ulm_card_person_icon: mdi:face-woman
-                tap_action:
-                      action: none
-  
-          - type: horizontal-stack
-            cards:
-              - type: 'custom:button-card'
-                template: card_person
-                entity: person.children1demos
-                variables:
-                  ulm_card_person_entity: person.children1demos
-                  ulm_card_person_use_entity_picture: true
-                  ulm_card_person_icon: mdi:face-woman
-                tap_action:
-                      action: none
-                      
-          - type: "custom:button-card"
-            template: "card_scenes_welcome"
-            variables:
-              entity_1:
-                entity_id: scene.scene_demo_buenos_dias
-                icon: "mdi:weather-sunny" 
-                name: "Buen Dia" 
-                color: "yellow"
-              entity_2:
-                entity_id: scene.scene_demo_buenas_noches
-                icon: "mdi:moon-waning-crescent"
-                name: "Zzzz.."
-                color: "purple"
-              entity_3:
-                entity_id: scene.scene_demo_luces_apagadas
-                icon: "mdi:lightbulb-off" 
-                name: "Apagadas" 
-                color: "blue"
-              entity_4:
-                entity_id: scene.scene_demo_ausente
-                icon: "mdi:home-export-outline" 
-                name: "Ausente" 
-                color: "red"                        
-              entity_5:
-                entity_id: scene.scene_en_casa
-                icon: "mdi:home-heart" 
-                name: "En casa" 
-                color: "pink" 
-
-
-
-    - type: vertical-stack
-      cards:
-          - type: "custom:button-card"
-            template: card_weather
-            entity: weather.openweathermap
-            tap_action:
-                      action: none
-            variables:
-              ulm_card_weather_name: " "
-              ulm_card_weather_primary_info:
-                - wind_speed
-                - precipitation_probability
-              ulm_card_weather_backdrop:
-                fade: true
-              #ulm_card_weather_custom:
-              #  - temp: sensor.sensor_temperatura_humedad_de_la_sala_temperature
+      - type: custom:button-card
+        template: card_person
+        entity: person.ismart
+        variables:
+          ulm_card_person_entity: person.ismart
+          ulm_card_person_use_entity_picture: true
+          ulm_card_person_icon: mdi:face-woman
+        tap_action:
+          action: false
+      - type: custom:button-card
+        template: card_person
+        entity: person.ismart
+        variables:
+          ulm_card_person_entity: person.ismart
+          ulm_card_person_use_entity_picture: true
+          ulm_card_person_icon: mdi:face-woman
+        tap_action:
+          action: false
+      - type: custom:button-card
+        template: card_person
+        entity: person.ismart
+        variables:
+          ulm_card_person_entity: person.ismart
+          ulm_card_person_use_entity_picture: true
+          ulm_card_person_icon: mdi:face-woman
+        tap_action:
+          action: false
+    - type: custom:button-card
+      template: card_scenes_welcome
+      variables:
+        entity_1:
+          entity_id: scene.scene_demo_buenos_dias
+          icon: mdi:weather-sunny
+          name: Buen Dia
+          color: yellow
+        entity_2:
+          entity_id: scene.scene_demo_buenos_dias
+          icon: mdi:moon-waning-crescent
+          name: Zzzz..
+          color: purple
+        entity_3:
+          entity_id: scene.scene_demo_buenos_dias
+          icon: mdi:lightbulb-off
+          name: Luces Apagadas
+          color: blue
+        entity_4:
+          entity_id: scene.scene_demo_buenos_dias
+          icon: mdi:home-export-outline
+          name: Ausente
+          color: red
+        entity_5:
+          entity_id: scene.scene_demo_buenos_dias
+          icon: mdi:home-heart
+          name: En casa
+          color: pink
