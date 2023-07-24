@@ -114,11 +114,7 @@ binary_sensor:
 #una direccion publica
 #y exista un error de Received X-Forwarded-For header from untrusted prox
 http:
-  use_x_forwarded_for: true
-  trusted_proxies:
-    - 172.30.33.0/24
-  ip_ban_enabled: true
-  login_attempts_threshold: 5
+  server_port: 8124
   
 
 
