@@ -115,6 +115,8 @@ binary_sensor:
 #y exista un error de Received X-Forwarded-For header from untrusted prox
 http:
   server_port: 8124
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
   
 
 
