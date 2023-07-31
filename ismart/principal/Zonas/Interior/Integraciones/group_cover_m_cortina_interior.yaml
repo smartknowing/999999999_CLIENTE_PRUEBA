@@ -1,0 +1,6 @@
+cover:
+- platform: group
+  name: Cortinas Interior
+  unique_id: group_cover_cortinas_interior
+  entities:
+  - cover.kitchen_window

@@ -4,6 +4,27 @@
     cards:
       - type: vertical-stack
         cards:
+              - type: 'custom:button-card'
+                template: card_title
+                name: Bienvenido a
+                label: 'ISMART'
+  
+              - type: horizontal-stack
+                cards:
+                - type: 'custom:button-card'
+                  template: card_generic
+                  entity: sensor.outside_temperature
+                - type: 'custom:button-card'
+                  template: card_generic
+                  entity: sensor.outside_humidity
+                  variables:
+                      ulm_card_generic_name: prueba3
+                      ulm_card_generic_icon: mdi:water-percent
+                      ulm_card_generic_color: red
+                      
+                             
+      - type: vertical-stack
+        cards:
             - type: "custom:button-card"
               template: custom_card_nik_clock
               variables:
@@ -59,8 +80,7 @@
                   icon: mdi:led-strip
                   tap_action:
                     action: none
+
+
                     
-
-
-
-
+                    

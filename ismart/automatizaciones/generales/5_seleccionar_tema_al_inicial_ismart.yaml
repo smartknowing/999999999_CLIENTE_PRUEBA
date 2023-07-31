@@ -1,0 +1,9 @@
+id: "05816c0870524687a7eeb57a3a9b808c"
+alias: "Setear tema cuando Ismart Inicia startup"
+trigger:
+  - event: start
+    platform: homeassistant
+action:
+  - service: frontend.set_theme
+    data:
+      name: "minimalist-desktop"

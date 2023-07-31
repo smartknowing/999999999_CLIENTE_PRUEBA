@@ -1,0 +1,6 @@
+cover:
+- platform: group
+  name: Cortinas Estudio
+  unique_id: group_cover_cortinas_estudio
+  entities:
+  - cover.kitchen_window
