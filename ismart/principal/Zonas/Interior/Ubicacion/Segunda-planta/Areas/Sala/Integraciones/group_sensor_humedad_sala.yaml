@@ -1,0 +1,6 @@
+sensor:
+- platform: group
+  type: mean
+  name: Humedad Sala
+  entities:
+  - sensor.outside_humidity

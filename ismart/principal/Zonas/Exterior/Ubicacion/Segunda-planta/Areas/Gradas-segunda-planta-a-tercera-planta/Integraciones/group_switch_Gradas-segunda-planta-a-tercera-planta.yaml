@@ -1,0 +1,5 @@
+switch:
+- platform: group
+  name: group_switch_luces_exterior_segunda-planta_gradas-segunda-planta-a-tercera-planta
+  entities:
+  - switch.ac

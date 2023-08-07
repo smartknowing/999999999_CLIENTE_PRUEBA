@@ -1,0 +1,6 @@
+switch:
+- platform: group
+  name: Luces Exterior Planta-baja
+  entities:
+  - switch.ac
+  - switch.ac

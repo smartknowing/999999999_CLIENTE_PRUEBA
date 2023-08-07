@@ -115,8 +115,8 @@ sensor:
   - platform: demo
   
 cover:
-  - platform: demo	   
-  
+  - platform: demo
+
 # http://patorjk.com/software/taag/#p=display&f=Banner3&t=Type%20Something%20
 # Para la configuración del acceso desde 
 #una direccion publica
@@ -125,8 +125,6 @@ http:
   server_port: 8124
   ssl_certificate: /ssl/fullchain.pem
   ssl_key: /ssl/privkey.pem
-					  
-							 
   
 
 

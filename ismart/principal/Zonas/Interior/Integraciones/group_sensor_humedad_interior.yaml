@@ -1,0 +1,6 @@
+sensor:
+- platform: group
+  type: mean
+  name: Hum. Interior
+  entities:
+  - sensor.outside_humidity

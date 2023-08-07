@@ -1,5 +1,5 @@
 cover:
 - platform: group
-  name: Cortinas Interior
+  name: Cortinas Segunda-planta
   entities:
   - cover.kitchen_window

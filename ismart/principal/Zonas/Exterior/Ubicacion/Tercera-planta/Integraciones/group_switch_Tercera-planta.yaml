@@ -1,0 +1,5 @@
+switch:
+- platform: group
+  name: Luces Exterior Tercera-planta
+  entities:
+  - switch.ac

@@ -1,0 +1,195 @@
+- name: Ausente
+  id: scene_demo_buenos_dias
+  icon: mdi:home-export-outline
+  entities:
+    switch.ac: 'off'
+    sensor.outside_humidity: 'off'
+    sensor.outside_temperature: 'off'
+- name: Buen Dia
+  id: scene_demo_buenos_dias
+  icon: mdi:weather-sunny
+  entities:
+    switch.ac: 'on'
+    sensor.outside_humidity: 'on'
+    sensor.outside_temperature: 'on'
+- name: En casa
+  id: scene_demo_buenos_dias
+  icon: mdi:home-heart
+  entities:
+    switch.ac: 'on'
+    sensor.outside_humidity: 'on'
+    sensor.outside_temperature: 'on'
+- name: Luces Apagadas
+  id: scene_demo_buenos_dias
+  icon: mdi:lightbulb-off
+  entities:
+    switch.ac: 'off'
+    sensor.outside_humidity: 'off'
+    sensor.outside_temperature: 'off'
+- name: Zzzz..
+  id: scene_demo_buenos_dias
+  icon: mdi:moon-waning-crescent
+  entities:
+    switch.ac: 'off'
+    sensor.outside_humidity: 'off'
+    sensor.outside_temperature: 'off'
+- name: Ausente
+  id: scene_demo_buenos_dias
+  icon: mdi:home-export-outline
+  entities:
+    switch.ac: 'off'
+- name: Buen Dia
+  id: scene_demo_buenos_dias
+  icon: mdi:weather-sunny
+  entities:
+    switch.ac: 'on'
+- name: En casa
+  id: scene_demo_buenos_dias
+  icon: mdi:home-heart
+  entities:
+    switch.ac: 'on'
+- name: Luces Apagadas
+  id: scene_demo_buenos_dias
+  icon: mdi:lightbulb-off
+  entities:
+    switch.ac: 'off'
+- name: Zzzz..
+  id: scene_demo_buenos_dias
+  icon: mdi:moon-waning-crescent
+  entities:
+    switch.ac: 'off'
+- name: Ausente
+  id: scene_demo_buenos_dias
+  icon: mdi:home-export-outline
+  entities:
+    switch.ac: 'off'
+- name: Buen Dia
+  id: scene_demo_buenos_dias
+  icon: mdi:weather-sunny
+  entities:
+    switch.ac: 'on'
+- name: En casa
+  id: scene_demo_buenos_dias
+  icon: mdi:home-heart
+  entities:
+    switch.ac: 'on'
+- name: Luces Apagadas
+  id: scene_demo_buenos_dias
+  icon: mdi:lightbulb-off
+  entities:
+    switch.ac: 'off'
+- name: Zzzz..
+  id: scene_demo_buenos_dias
+  icon: mdi:moon-waning-crescent
+  entities:
+    switch.ac: 'off'
+- name: Ausente
+  id: scene_demo_buenos_dias
+  icon: mdi:home-export-outline
+  entities:
+    switch.ac: 'off'
+- name: Buen Dia
+  id: scene_demo_buenos_dias
+  icon: mdi:weather-sunny
+  entities:
+    switch.ac: 'on'
+- name: En casa
+  id: scene_demo_buenos_dias
+  icon: mdi:home-heart
+  entities:
+    switch.ac: 'on'
+- name: Luces Apagadas
+  id: scene_demo_buenos_dias
+  icon: mdi:lightbulb-off
+  entities:
+    switch.ac: 'off'
+- name: Zzzz..
+  id: scene_demo_buenos_dias
+  icon: mdi:moon-waning-crescent
+  entities:
+    switch.ac: 'off'
+- name: Ausente
+  id: scene_demo_buenos_dias
+  icon: mdi:home-export-outline
+  entities:
+    switch.ac: 'off'
+- name: Buen Dia
+  id: scene_demo_buenos_dias
+  icon: mdi:weather-sunny
+  entities:
+    switch.ac: 'on'
+- name: En casa
+  id: scene_demo_buenos_dias
+  icon: mdi:home-heart
+  entities:
+    switch.ac: 'on'
+- name: Luces Apagadas
+  id: scene_demo_buenos_dias
+  icon: mdi:lightbulb-off
+  entities:
+    switch.ac: 'off'
+- name: Zzzz..
+  id: scene_demo_buenos_dias
+  icon: mdi:moon-waning-crescent
+  entities:
+    switch.ac: 'off'
+- name: Ausente
+  id: scene_demo_buenos_dias
+  icon: mdi:home-export-outline
+  entities:
+    switch.ac: 'off'
+- name: Buen Dia
+  id: scene_demo_buenos_dias
+  icon: mdi:weather-sunny
+  entities:
+    switch.ac: 'on'
+- name: En casa
+  id: scene_demo_buenos_dias
+  icon: mdi:home-heart
+  entities:
+    switch.ac: 'on'
+- name: Luces Apagadas
+  id: scene_demo_buenos_dias
+  icon: mdi:lightbulb-off
+  entities:
+    switch.ac: 'off'
+- name: Zzzz..
+  id: scene_demo_buenos_dias
+  icon: mdi:moon-waning-crescent
+  entities:
+    switch.ac: 'off'
+- name: Ausente
+  id: scene_demo_buenos_dias
+  icon: mdi:home-export-outline
+  entities:
+    sensor.outside_humidity: 'off'
+    sensor.outside_temperature: 'off'
+    switch.ac: 'off'
+- name: Buen Dia
+  id: scene_demo_buenos_dias
+  icon: mdi:weather-sunny
+  entities:
+    sensor.outside_humidity: 'on'
+    sensor.outside_temperature: 'on'
+    switch.ac: 'on'
+- name: En casa
+  id: scene_demo_buenos_dias
+  icon: mdi:home-heart
+  entities:
+    sensor.outside_humidity: 'on'
+    sensor.outside_temperature: 'on'
+    switch.ac: 'on'
+- name: Luces Apagadas
+  id: scene_demo_buenos_dias
+  icon: mdi:lightbulb-off
+  entities:
+    sensor.outside_humidity: 'off'
+    sensor.outside_temperature: 'off'
+    switch.ac: 'off'
+- name: Zzzz..
+  id: scene_demo_buenos_dias
+  icon: mdi:moon-waning-crescent
+  entities:
+    sensor.outside_humidity: 'off'
+    sensor.outside_temperature: 'off'
+    switch.ac: 'off'

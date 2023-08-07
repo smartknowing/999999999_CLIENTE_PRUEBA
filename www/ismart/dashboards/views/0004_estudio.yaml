@@ -1,0 +1,43 @@
+- title: Estudio
+  path: estudio
+  icon: mdi:book-open-variant
+  cards:
+  - type: vertical-stack
+    cards:
+    - type: custom:button-card
+      template: card_scenes_welcome
+      variables:
+        entity_1:
+          entity_id: scene.scene_demo_buenos_dias
+          icon: mdi:home-export-outline
+          name: Ausente
+          color: yellow
+        entity_2:
+          entity_id: scene.scene_demo_buenos_dias
+          icon: mdi:weather-sunny
+          name: Buen Dia
+          color: purple
+        entity_3:
+          entity_id: scene.scene_demo_buenos_dias
+          icon: mdi:home-heart
+          name: En casa
+          color: blue
+        entity_4:
+          entity_id: scene.scene_demo_buenos_dias
+          icon: mdi:lightbulb-off
+          name: Luces Apagadas
+          color: red
+        entity_5:
+          entity_id: scene.scene_demo_buenos_dias
+          icon: mdi:moon-waning-crescent
+          name: Zzzz..
+          color: pink
+    - type: entities
+      title: Luces Estudio
+      show_header_toggle: true
+      entities:
+      - entity: switch.ac
+        name: ' Luz del Estudio'
+        icon: mdi:lightbulb-group
+        tap_action:
+          action: none
