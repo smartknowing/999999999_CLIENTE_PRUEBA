@@ -125,27 +125,27 @@
       template: card_scenes_welcome
       variables:
         entity_1:
-          entity_id: scene.scene_demo_buenos_dias
+          entity_id: scene.buen_dia_admin
           icon: mdi:weather-sunny
           name: Buen Dia
           color: yellow
         entity_2:
-          entity_id: scene.scene_demo_buenos_dias
+          entity_id: scene.zzzz_admin
           icon: mdi:moon-waning-crescent
           name: Zzzz..
           color: purple
         entity_3:
-          entity_id: scene.scene_demo_buenos_dias
+          entity_id: scene.luces_apagadas_admin
           icon: mdi:lightbulb-off
           name: Luces Apagadas
           color: blue
         entity_4:
-          entity_id: scene.scene_demo_buenos_dias
+          entity_id: scene.ausente_admin
           icon: mdi:home-export-outline
           name: Ausente
           color: red
         entity_5:
-          entity_id: scene.scene_demo_buenos_dias
+          entity_id: scene.en_casa_admin
           icon: mdi:home-heart
           name: En casa
           color: pink
@@ -165,17 +165,39 @@
           fade: true
     - type: horizontal-stack
       cards:
+      - type: vertical-stack
+        cards:
         - type: custom:button-card
           template: card_generic
           entity: sensor.temperatura_interior
           variables:
             ulm_card_generic_name: Temperatura Interior
             ulm_card_generic_icon: mdi:home-thermometer
+      - type: vertical-stack
+        cards:
         - type: custom:button-card
           template: card_generic
           entity: sensor.humedad_interior
           variables:
             ulm_card_generic_name: Humedad Interior
+            ulm_card_generic_icon: mdi:home-thermometer
+    - type: horizontal-stack
+      cards:
+      - type: vertical-stack
+        cards:
+        - type: custom:button-card
+          template: card_generic
+          entity: sensor.group_sensor_temperatura_segunda-planta
+          variables:
+            ulm_card_generic_name: Temperatura Segunda-planta
+            ulm_card_generic_icon: mdi:home-thermometer
+      - type: vertical-stack
+        cards:
+        - type: custom:button-card
+          template: card_generic
+          entity: sensor.group_sensor_humedad_segunda-planta
+          variables:
+            ulm_card_generic_name: Humedad Segunda-planta
             ulm_card_generic_icon: mdi:home-thermometer
     - type: entities
       title: Cortinas por Zona

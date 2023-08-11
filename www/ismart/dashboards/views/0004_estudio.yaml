@@ -8,27 +8,27 @@
       template: card_scenes_welcome
       variables:
         entity_1:
-          entity_id: scene.scene_demo_buenos_dias
+          entity_id: scene.ausente_estudio
           icon: mdi:home-export-outline
           name: Ausente
           color: yellow
         entity_2:
-          entity_id: scene.scene_demo_buenos_dias
+          entity_id: scene.buen_dia_estudio
           icon: mdi:weather-sunny
           name: Buen Dia
           color: purple
         entity_3:
-          entity_id: scene.scene_demo_buenos_dias
+          entity_id: scene.en_casa_estudio
           icon: mdi:home-heart
           name: En casa
           color: blue
         entity_4:
-          entity_id: scene.scene_demo_buenos_dias
+          entity_id: scene.luces_apagadas_estudio
           icon: mdi:lightbulb-off
           name: Luces Apagadas
           color: red
         entity_5:
-          entity_id: scene.scene_demo_buenos_dias
+          entity_id: scene.zzzz_estudio
           icon: mdi:moon-waning-crescent
           name: Zzzz..
           color: pink

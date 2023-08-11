@@ -15,6 +15,7 @@
 # Comenta estas 2 líneas si no quieres incluir tus llaves SSH
 !.ssh/
 !id_rsa*
+!.storage/**/**/**/**/**
 #SMART
 
 !ismart/

@@ -1,6 +1,7 @@
 sensor:
 - platform: group
   type: mean
-  name: Hum. Interior
+  name: Humedad Interior
+  unique_id: group_sensor_humedad_interior
   entities:
   - sensor.outside_humidity
