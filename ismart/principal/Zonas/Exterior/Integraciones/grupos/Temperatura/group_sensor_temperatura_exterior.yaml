@@ -1,0 +1,6 @@
+- platform: group
+  type: mean
+  name: Temperatura Exterior
+  unique_id: group_sensor_temperatura_exterior
+  entities:
+  - sensor.outside_temperature

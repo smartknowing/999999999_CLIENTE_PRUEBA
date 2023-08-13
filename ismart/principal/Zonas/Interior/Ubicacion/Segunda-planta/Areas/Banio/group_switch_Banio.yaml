@@ -1,6 +1,0 @@
-switch:
-- platform: group
-  name: group_switch_luces_interior_segunda-planta_banio
-  unique_id: group_switch_luces_interior_segunda-planta_banio
-  entities:
-  - switch.Interruptor_doble_Pared_Luces_00_zigbee_01_Interior_Banio

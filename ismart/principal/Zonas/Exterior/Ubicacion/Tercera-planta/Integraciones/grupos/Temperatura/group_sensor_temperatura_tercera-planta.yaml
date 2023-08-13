@@ -1,0 +1,6 @@
+- platform: group
+  type: mean
+  name: Temperatura Tercera-planta
+  unique_id: group_sensor_temperatura_tercera-planta
+  entities:
+  - sensor.outside_temperature

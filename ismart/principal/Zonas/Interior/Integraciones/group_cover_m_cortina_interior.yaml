@@ -1,5 +1,0 @@
-cover:
-- platform: group
-  name: Cortinas Interior
-  entities:
-  - cover.kitchen_window

@@ -1,5 +1,0 @@
-cover:
-- platform: group
-  name: Cortinas Estudio
-  entities:
-  - cover.kitchen_window

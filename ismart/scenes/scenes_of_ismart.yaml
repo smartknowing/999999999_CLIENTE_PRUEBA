@@ -1,7 +1,195 @@
-- name: Ausente
+- name: Ausente admin
   id: ausente_admin
   icon: mdi:home-export-outline
   entities:
     switch.ac: 'off'
     sensor.outside_humidity: 'off'
     sensor.outside_temperature: 'off'
+- name: Buen Dia admin
+  id: buen_dia_admin
+  icon: mdi:weather-sunny
+  entities:
+    switch.ac: 'on'
+    sensor.outside_humidity: 'on'
+    sensor.outside_temperature: 'on'
+- name: En casa admin
+  id: en_casa_admin
+  icon: mdi:home-heart
+  entities:
+    switch.ac: 'on'
+    sensor.outside_humidity: 'on'
+    sensor.outside_temperature: 'on'
+- name: Luces Apagadas admin
+  id: luces_apagadas_admin
+  icon: mdi:lightbulb-off
+  entities:
+    switch.ac: 'off'
+    sensor.outside_humidity: 'off'
+    sensor.outside_temperature: 'off'
+- name: Zzzz.. admin
+  id: zzzz_admin
+  icon: mdi:moon-waning-crescent
+  entities:
+    switch.ac: 'off'
+    sensor.outside_humidity: 'off'
+    sensor.outside_temperature: 'off'
+- name: Ausente Banio
+  id: ausente_banio
+  icon: mdi:home-export-outline
+  entities:
+    switch.ac: 'off'
+- name: Buen Dia Banio
+  id: buen_dia_banio
+  icon: mdi:weather-sunny
+  entities:
+    switch.ac: 'on'
+- name: En casa Banio
+  id: en_casa_banio
+  icon: mdi:home-heart
+  entities:
+    switch.ac: 'on'
+- name: Luces Apagadas Banio
+  id: luces_apagadas_banio
+  icon: mdi:lightbulb-off
+  entities:
+    switch.ac: 'off'
+- name: Zzzz.. Banio
+  id: zzzz_banio
+  icon: mdi:moon-waning-crescent
+  entities:
+    switch.ac: 'off'
+- name: Ausente Cocina
+  id: ausente_cocina
+  icon: mdi:home-export-outline
+  entities:
+    switch.ac: 'off'
+- name: Buen Dia Cocina
+  id: buen_dia_cocina
+  icon: mdi:weather-sunny
+  entities:
+    switch.ac: 'on'
+- name: En casa Cocina
+  id: en_casa_cocina
+  icon: mdi:home-heart
+  entities:
+    switch.ac: 'on'
+- name: Luces Apagadas Cocina
+  id: luces_apagadas_cocina
+  icon: mdi:lightbulb-off
+  entities:
+    switch.ac: 'off'
+- name: Zzzz.. Cocina
+  id: zzzz_cocina
+  icon: mdi:moon-waning-crescent
+  entities:
+    switch.ac: 'off'
+- name: Ausente Cuarto-squishpe
+  id: ausente_cuarto-squishpe
+  icon: mdi:home-export-outline
+  entities:
+    switch.ac: 'off'
+- name: Buen Dia Cuarto-squishpe
+  id: buen_dia_cuarto-squishpe
+  icon: mdi:weather-sunny
+  entities:
+    switch.ac: 'on'
+- name: En casa Cuarto-squishpe
+  id: en_casa_cuarto-squishpe
+  icon: mdi:home-heart
+  entities:
+    switch.ac: 'on'
+- name: Luces Apagadas Cuarto-squishpe
+  id: luces_apagadas_cuarto-squishpe
+  icon: mdi:lightbulb-off
+  entities:
+    switch.ac: 'off'
+- name: Zzzz.. Cuarto-squishpe
+  id: zzzz_cuarto-squishpe
+  icon: mdi:moon-waning-crescent
+  entities:
+    switch.ac: 'off'
+- name: Ausente Estudio
+  id: ausente_estudio
+  icon: mdi:home-export-outline
+  entities:
+    switch.ac: 'off'
+- name: Buen Dia Estudio
+  id: buen_dia_estudio
+  icon: mdi:weather-sunny
+  entities:
+    switch.ac: 'on'
+- name: En casa Estudio
+  id: en_casa_estudio
+  icon: mdi:home-heart
+  entities:
+    switch.ac: 'on'
+- name: Luces Apagadas Estudio
+  id: luces_apagadas_estudio
+  icon: mdi:lightbulb-off
+  entities:
+    switch.ac: 'off'
+- name: Zzzz.. Estudio
+  id: zzzz_estudio
+  icon: mdi:moon-waning-crescent
+  entities:
+    switch.ac: 'off'
+- name: Ausente Lavanderia
+  id: ausente_lavanderia
+  icon: mdi:home-export-outline
+  entities:
+    switch.ac: 'off'
+- name: Buen Dia Lavanderia
+  id: buen_dia_lavanderia
+  icon: mdi:weather-sunny
+  entities:
+    switch.ac: 'on'
+- name: En casa Lavanderia
+  id: en_casa_lavanderia
+  icon: mdi:home-heart
+  entities:
+    switch.ac: 'on'
+- name: Luces Apagadas Lavanderia
+  id: luces_apagadas_lavanderia
+  icon: mdi:lightbulb-off
+  entities:
+    switch.ac: 'off'
+- name: Zzzz.. Lavanderia
+  id: zzzz_lavanderia
+  icon: mdi:moon-waning-crescent
+  entities:
+    switch.ac: 'off'
+- name: Ausente Sala
+  id: ausente_sala
+  icon: mdi:home-export-outline
+  entities:
+    sensor.outside_humidity: 'off'
+    sensor.outside_temperature: 'off'
+    switch.ac: 'off'
+- name: Buen Dia Sala
+  id: buen_dia_sala
+  icon: mdi:weather-sunny
+  entities:
+    sensor.outside_humidity: 'on'
+    sensor.outside_temperature: 'on'
+    switch.ac: 'on'
+- name: En casa Sala
+  id: en_casa_sala
+  icon: mdi:home-heart
+  entities:
+    sensor.outside_humidity: 'on'
+    sensor.outside_temperature: 'on'
+    switch.ac: 'on'
+- name: Luces Apagadas Sala
+  id: luces_apagadas_sala
+  icon: mdi:lightbulb-off
+  entities:
+    sensor.outside_humidity: 'off'
+    sensor.outside_temperature: 'off'
+    switch.ac: 'off'
+- name: Zzzz.. Sala
+  id: zzzz_sala
+  icon: mdi:moon-waning-crescent
+  entities:
+    sensor.outside_humidity: 'off'
+    sensor.outside_temperature: 'off'
+    switch.ac: 'off'

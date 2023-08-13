@@ -1,5 +1,0 @@
-switch:
-- platform: group
-  name: group_switch_luces_interior_segunda-planta_banio
-  entities:
-  - switch.ac

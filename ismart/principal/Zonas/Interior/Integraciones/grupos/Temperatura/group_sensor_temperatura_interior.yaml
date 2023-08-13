@@ -1,4 +1,3 @@
-sensor:
 - platform: group
   type: mean
   name: Temperatura Interior

@@ -1,5 +1,0 @@
-cover:
-- platform: group
-  name: Cortinas Segunda-planta
-  entities:
-  - cover.kitchen_window

@@ -1,5 +1,0 @@
-switch:
-- platform: group
-  name: group_switch_luces_exterior_planta-baja_lavanderia
-  entities:
-  - switch.ac

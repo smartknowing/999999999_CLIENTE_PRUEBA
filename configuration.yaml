@@ -11,12 +11,12 @@ homeassistant:
     pack_1: !include_dir_merge_named ismart/config/
     pack_2: !include_dir_merge_named ismart/servicios/
     pack_3: !include_dir_merge_named ismart/integraciones/
-    pack_5: !include_dir_merge_named ismart/principal/Zonas/Interior/
-    pack_6: !include_dir_merge_named ismart/principal/Zonas/Exterior/
-    pack_7: !include_dir_merge_named ismart/principal/Zonas/Interior/Integraciones/
-    pack_8: !include_dir_merge_named ismart/principal/Zonas/Exterior/Integraciones/
-    pack_9: !include_dir_merge_named ismart/principal/Zonas/Interior/Ubicacion/
-    pack_10: !include_dir_merge_named ismart/principal/Zonas/Exterior/Ubicacion/
+    #pack_5: !include_dir_merge_named ismart/principal/Zonas/Interior/
+    #pack_6: !include_dir_merge_named ismart/principal/Zonas/Exterior/
+    #pack_7: !include_dir_merge_named ismart/principal/Zonas/Interior/Integraciones/
+    #pack_8: !include_dir_merge_named ismart/principal/Zonas/Exterior/Integraciones/
+    #pack_9: !include_dir_merge_named ismart/principal/Zonas/Interior/Ubicacion/
+    #pack_10: !include_dir_merge_named ismart/principal/Zonas/Exterior/Ubicacion/
 
 
 
@@ -105,17 +105,18 @@ lovelace:
 ##     ## ##       ##     ## ##     ## 
 ########  ######## ##     ##  #######  
 
-switch:
-  - platform: demo
+demo:
 
-binary_sensor:
-  - platform: demo
-  
-sensor:
-  - platform: demo
-  
-cover:
-  - platform: demo
+sensor gr_interior_temperatura: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/Temperatura/
+sensor gr_ext_temperatura: !include_dir_merge_list ismart/principal/Zonas/Exterior/Integraciones/grupos/Temperatura/
+
+sensor gr_ext_ubi_tercera_planta_temperatura: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Tercera-planta/Integraciones/grupos/Temperatura/
+
+
+
+#cover:
+#  - platform: demo
+
 
 # http://patorjk.com/software/taag/#p=display&f=Banner3&t=Type%20Something%20
 # Para la configuración del acceso desde 
