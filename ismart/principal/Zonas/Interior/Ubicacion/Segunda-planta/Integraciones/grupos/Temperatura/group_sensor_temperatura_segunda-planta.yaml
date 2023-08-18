@@ -1,0 +1,6 @@
+- platform: group
+  type: mean
+  name: Temperatura Segunda-planta
+  unique_id: group_sensor_temperatura_segunda-planta
+  entities:
+  - sensor.outside_temperature

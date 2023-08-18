@@ -1,0 +1,10 @@
+switch:
+- platform: group
+  name: Luces Interior
+  entities:
+  - switch.ac
+  - switch.ac
+  - switch.ac
+  - switch.ac
+  - switch.ac
+  - switch.ac

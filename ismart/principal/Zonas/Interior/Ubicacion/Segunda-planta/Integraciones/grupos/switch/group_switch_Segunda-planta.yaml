@@ -1,0 +1,10 @@
+switch:
+- platform: group
+  name: Luces Interior Segunda-planta
+  entities:
+  - switch.ac
+  - switch.ac
+  - switch.ac
+  - switch.ac
+  - switch.ac
+  - switch.ac

@@ -1,0 +1,6 @@
+switch:
+- platform: group
+  name: Luces Exterior Segunda-planta
+  entities:
+  - switch.ac
+  - switch.ac

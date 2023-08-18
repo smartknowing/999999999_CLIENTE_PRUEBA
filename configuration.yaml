@@ -1,75 +1,20 @@
-# http://patorjk.com/software/taag/#p=display&f=Banner3&t=Type%20Something%20
-#Generacion de codigo uuid
-#https://www.uuidgenerator.net/
 homeassistant:
-  name: CAMBIAR-NOMBRE-HOUSE            #A
-  latitude: -0.3261465                  #A
-  longitude: -78.5358938                #A
+  name: CAMBIAR NOMBRE
+  latitude: -0.3261465
+  longitude: -78.5358938
   unit_system: metric
-  time_zone: "America/Guayaquil"
+  time_zone: America/Guayaquil
   packages:
     pack_1: !include_dir_merge_named ismart/config/
     pack_2: !include_dir_merge_named ismart/servicios/
     pack_3: !include_dir_merge_named ismart/integraciones/
-    #pack_5: !include_dir_merge_named ismart/principal/Zonas/Interior/
-    #pack_6: !include_dir_merge_named ismart/principal/Zonas/Exterior/
-    #pack_7: !include_dir_merge_named ismart/principal/Zonas/Interior/Integraciones/
-    #pack_8: !include_dir_merge_named ismart/principal/Zonas/Exterior/Integraciones/
-    #pack_9: !include_dir_merge_named ismart/principal/Zonas/Interior/Ubicacion/
-    #pack_10: !include_dir_merge_named ismart/principal/Zonas/Exterior/Ubicacion/
-
-
-
-######## ########   #######  ##    ## ########    ######## ##    ## ########  
-##       ##     ## ##     ## ###   ##    ##       ##       ###   ## ##     ## 
-##       ##     ## ##     ## ####  ##    ##       ##       ####  ## ##     ## 
-######   ########  ##     ## ## ## ##    ##       ######   ## ## ## ##     ## 
-##       ##   ##   ##     ## ##  ####    ##       ##       ##  #### ##     ## 
-##       ##    ##  ##     ## ##   ###    ##       ##       ##   ### ##     ## 
-##       ##     ##  #######  ##    ##    ##       ######## ##    ## ########  
-
-
 frontend:
   development_repo: /share/frontend
   themes: !include_dir_merge_named themes
-  
-
-   ###    ##     ## ########  #######  ##     ##    ###    ######## #### ########    ###     ######  ####  #######  ##    ## ########  ######  
-  ## ##   ##     ##    ##    ##     ## ###   ###   ## ##      ##     ##       ##    ## ##   ##    ##  ##  ##     ## ###   ## ##       ##    ## 
- ##   ##  ##     ##    ##    ##     ## #### ####  ##   ##     ##     ##      ##    ##   ##  ##        ##  ##     ## ####  ## ##       ##       
-##     ## ##     ##    ##    ##     ## ## ### ## ##     ##    ##     ##     ##    ##     ## ##        ##  ##     ## ## ## ## ######    ######  
-######### ##     ##    ##    ##     ## ##     ## #########    ##     ##    ##     ######### ##        ##  ##     ## ##  #### ##             ## 
-##     ## ##     ##    ##    ##     ## ##     ## ##     ##    ##     ##   ##      ##     ## ##    ##  ##  ##     ## ##   ### ##       ##    ## 
-##     ##  #######     ##     #######  ##     ## ##     ##    ##    #### ######## ##     ##  ######  ####  #######  ##    ## ########  ######  
-
-
-#Cada automatización debe estar en un archivo
 automation generales: !include_dir_list ismart/automatizaciones/generales/
 automation principal: !include_dir_list /ismart/principal/
-automation ui: !include automations.yaml 
-
-
-
- ######   ######  ######## ##    ## ########  ######  
-##    ## ##    ## ##       ###   ## ##       ##    ## 
-##       ##       ##       ####  ## ##       ##       
- ######  ##       ######   ## ## ## ######    ######  
-      ## ##       ##       ##  #### ##             ## 
-##    ## ##    ## ##       ##   ### ##       ##    ## 
- ######   ######  ######## ##    ## ########  ######  
-
-#scene: !include scenes.yaml
+automation ui: !include automations.yaml
 scene: !include_dir_merge_list ismart/scenes/
-
-########  ##          ###    ##    ##  #######     ########  ########  #### ##    ##  ######  #### ########     ###    ##       
-##     ## ##         ## ##   ###   ## ##     ##    ##     ## ##     ##  ##  ###   ## ##    ##  ##  ##     ##   ## ##   ##       
-##     ## ##        ##   ##  ####  ## ##     ##    ##     ## ##     ##  ##  ####  ## ##        ##  ##     ##  ##   ##  ##       
-########  ##       ##     ## ## ## ## ##     ##    ########  ########   ##  ## ## ## ##        ##  ########  ##     ## ##       
-##        ##       ######### ##  #### ##     ##    ##        ##   ##    ##  ##  #### ##        ##  ##        ######### ##       
-##        ##       ##     ## ##   ### ##     ##    ##        ##    ##   ##  ##   ### ##    ##  ##  ##        ##     ## ##       
-##        ######## ##     ## ##    ##  #######     ##        ##     ## #### ##    ##  ######  #### ##        ##     ## ######## 
-
-
 lovelace:
   mode: storage
   dashboards:
@@ -77,80 +22,42 @@ lovelace:
       mode: yaml
       title: FloorPlan
       icon: mdi:home
-      show_in_sidebar: true
-      filename: www/ismart/planos/plano-main.yaml 
- 
-
-
-########     ###     ######  ##     ## ########   #######     ###    ########  ########     ##     ## #### ##    ## #### ##     ##    ###    ##       ####  ######  ########    ###    
-##     ##   ## ##   ##    ## ##     ## ##     ## ##     ##   ## ##   ##     ## ##     ##    ###   ###  ##  ###   ##  ##  ###   ###   ## ##   ##        ##  ##    ##    ##      ## ##   
-##     ##  ##   ##  ##       ##     ## ##     ## ##     ##  ##   ##  ##     ## ##     ##    #### ####  ##  ####  ##  ##  #### ####  ##   ##  ##        ##  ##          ##     ##   ##  
-##     ## ##     ##  ######  ######### ########  ##     ## ##     ## ########  ##     ##    ## ### ##  ##  ## ## ##  ##  ## ### ## ##     ## ##        ##   ######     ##    ##     ## 
-##     ## #########       ## ##     ## ##     ## ##     ## ######### ##   ##   ##     ##    ##     ##  ##  ##  ####  ##  ##     ## ######### ##        ##        ##    ##    ######### 
-##     ## ##     ## ##    ## ##     ## ##     ## ##     ## ##     ## ##    ##  ##     ##    ##     ##  ##  ##   ###  ##  ##     ## ##     ## ##        ##  ##    ##    ##    ##     ## 
-########  ##     ##  ######  ##     ## ########   #######  ##     ## ##     ## ########     ##     ## #### ##    ## #### ##     ## ##     ## ######## ####  ######     ##    ##     ## 
-
-# Se esta utilizando https://ui-lovelace-minimalist.github.io/UI/setup/configuration/#yaml-mode
-# la ruta donde se deben agregar las view es en /config/www/ismart/dashboards/views/
-
-#panel_custom: !include ismart/panels_customs/server_control_panel_custom.yaml
-
-
-
-########  ######## ##     ##  #######  
-##     ## ##       ###   ### ##     ## 
-##     ## ##       #### #### ##     ## 
-##     ## ######   ## ### ## ##     ## 
-##     ## ##       ##     ## ##     ## 
-##     ## ##       ##     ## ##     ## 
-########  ######## ##     ##  #######  
-
-demo:
-
-sensor gr_interior_temperatura: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/Temperatura/
-sensor gr_ext_temperatura: !include_dir_merge_list ismart/principal/Zonas/Exterior/Integraciones/grupos/Temperatura/
-
-sensor gr_ext_ubi_tercera_planta_temperatura: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Tercera-planta/Integraciones/grupos/Temperatura/
-
-
-
-#cover:
-#  - platform: demo
-
-
-# http://patorjk.com/software/taag/#p=display&f=Banner3&t=Type%20Something%20
-# Para la configuración del acceso desde 
-#una direccion publica
-#y exista un error de Received X-Forwarded-For header from untrusted prox
+      show_in_sidebar: True
+      filename: www/ismart/planos/plano-main.yaml
 http:
   server_port: 8124
   ssl_certificate: /ssl/fullchain.pem
   ssl_key: /ssl/privkey.pem
-  
-
-
-
- ######   #######  ##    ## ######## ####  ######       ######   ######## ##    ## ######## ########     ###    ##       ########  ######  
-##    ## ##     ## ###   ## ##        ##  ##    ##     ##    ##  ##       ###   ## ##       ##     ##   ## ##   ##       ##       ##    ## 
-##       ##     ## ####  ## ##        ##  ##           ##        ##       ####  ## ##       ##     ##  ##   ##  ##       ##       ##       
-##       ##     ## ## ## ## ######    ##  ##   ####    ##   #### ######   ## ## ## ######   ########  ##     ## ##       ######    ######  
-##       ##     ## ##  #### ##        ##  ##    ##     ##    ##  ##       ##  #### ##       ##   ##   ######### ##       ##             ## 
-##    ## ##     ## ##   ### ##        ##  ##    ##     ##    ##  ##       ##   ### ##       ##    ##  ##     ## ##       ##       ##    ## 
- ######   #######  ##    ## ##       ####  ######       ######   ######## ##    ## ######## ##     ## ##     ## ######## ########  ######  
-
-
-# Loads default set of integrations. Do not remove.
-default_config:
-
-# Text to speech
-tts:
-  - platform: google_translate
-
-
+default_config: 
+demo: 
+tts: [{'platform': 'google_translate'}]
 script: !include scripts.yaml
-
-
-
-
-
-
+sensor luces_exterior: !include_dir_merge_list ismart/principal/Zonas/Exterior/Integraciones/grupos/switch/
+sensor luces_interior: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/switch/
+sensor luces_exterior_planta_baja: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Planta-baja/Integraciones/grupos/switch/
+sensor luces_exterior_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Segunda-planta/Integraciones/grupos/switch/
+sensor luces_exterior_tercera_planta: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Tercera-planta/Integraciones/grupos/switch/
+sensor luces_interior_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Integraciones/grupos/switch/
+sensor luces_exterior_planta_baja_gradas_planta_baja_a_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Planta-baja/Areas/Gradas-planta-baja-a-segunda-planta/Integraciones/grupos/switch/
+sensor luces_exterior_planta_baja_lavanderia: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Planta-baja/Areas/Lavanderia/Integraciones/grupos/switch/
+sensor luces_exterior_segunda_planta_gradas_segunda_planta_a_planta_baja: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Segunda-planta/Areas/Gradas-segunda-planta-a-planta-baja/Integraciones/grupos/switch/
+sensor luces_exterior_segunda_planta_gradas_segunda_planta_a_tercera_planta: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Segunda-planta/Areas/Gradas-segunda-planta-a-tercera-planta/Integraciones/grupos/switch/
+sensor luces_exterior_tercera_planta_terraza: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Tercera-planta/Areas/Terraza/Integraciones/grupos/switch/
+sensor luces_interior_segunda_planta_banio: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Banio/Integraciones/grupos/switch/
+sensor luces_interior_segunda_planta_cocina: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Cocina/Integraciones/grupos/switch/
+sensor luces_interior_segunda_planta_cuarto_squishpe: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Cuarto-squishpe/Integraciones/grupos/switch/
+sensor luces_interior_segunda_planta_estudio: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Estudio/Integraciones/grupos/switch/
+sensor luces_interior_segunda_planta_recibidor: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Recibidor/Integraciones/grupos/switch/
+sensor luces_interior_segunda_planta_sala: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Sala/Integraciones/grupos/switch/
+sensor temperatura_exterior: !include_dir_merge_list ismart/principal/Zonas/Exterior/Integraciones/grupos/Temperatura/
+sensor temperatura_interior: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/Temperatura/
+sensor temperatura_tercera_planta: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Tercera-planta/Integraciones/grupos/Temperatura/
+sensor temperatura_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Integraciones/grupos/Temperatura/
+sensor temperatura_terraza: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Tercera-planta/Areas/Terraza/Integraciones/grupos/Temperatura/
+sensor temperatura_sala: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Sala/Integraciones/grupos/Temperatura/
+sensor humedad_interior: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/Humedad/
+sensor humedad_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Integraciones/grupos/Humedad/
+sensor humedad_sala: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Sala/Integraciones/grupos/Humedad/
+#sensor cortinas_interior: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/Cortinas/
+#sensor cortinas_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Integraciones/grupos/Cortinas/
+#sensor cortinas_estudio: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Estudio/Integraciones/grupos/Cortinas/
