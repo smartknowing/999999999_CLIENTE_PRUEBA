@@ -32,23 +32,23 @@ default_config:
 demo: 
 tts: [{'platform': 'google_translate'}]
 script: !include scripts.yaml
-sensor luces_exterior: !include_dir_merge_list ismart/principal/Zonas/Exterior/Integraciones/grupos/switch/
-sensor luces_interior: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/switch/
-sensor luces_exterior_planta_baja: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Planta-baja/Integraciones/grupos/switch/
-sensor luces_exterior_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Segunda-planta/Integraciones/grupos/switch/
-sensor luces_exterior_tercera_planta: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Tercera-planta/Integraciones/grupos/switch/
-sensor luces_interior_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Integraciones/grupos/switch/
-sensor luces_exterior_planta_baja_gradas_planta_baja_a_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Planta-baja/Areas/Gradas-planta-baja-a-segunda-planta/Integraciones/grupos/switch/
-sensor luces_exterior_planta_baja_lavanderia: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Planta-baja/Areas/Lavanderia/Integraciones/grupos/switch/
-sensor luces_exterior_segunda_planta_gradas_segunda_planta_a_planta_baja: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Segunda-planta/Areas/Gradas-segunda-planta-a-planta-baja/Integraciones/grupos/switch/
-sensor luces_exterior_segunda_planta_gradas_segunda_planta_a_tercera_planta: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Segunda-planta/Areas/Gradas-segunda-planta-a-tercera-planta/Integraciones/grupos/switch/
-sensor luces_exterior_tercera_planta_terraza: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Tercera-planta/Areas/Terraza/Integraciones/grupos/switch/
-sensor luces_interior_segunda_planta_banio: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Banio/Integraciones/grupos/switch/
-sensor luces_interior_segunda_planta_cocina: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Cocina/Integraciones/grupos/switch/
-sensor luces_interior_segunda_planta_cuarto_squishpe: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Cuarto-squishpe/Integraciones/grupos/switch/
-sensor luces_interior_segunda_planta_estudio: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Estudio/Integraciones/grupos/switch/
-sensor luces_interior_segunda_planta_recibidor: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Recibidor/Integraciones/grupos/switch/
-sensor luces_interior_segunda_planta_sala: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Sala/Integraciones/grupos/switch/
+switch luces_exterior: !include_dir_merge_list ismart/principal/Zonas/Exterior/Integraciones/grupos/switch/
+switch luces_interior: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/switch/
+switch luces_exterior_planta_baja: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Planta-baja/Integraciones/grupos/switch/
+switch luces_exterior_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Segunda-planta/Integraciones/grupos/switch/
+switch luces_exterior_tercera_planta: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Tercera-planta/Integraciones/grupos/switch/
+switch luces_interior_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Integraciones/grupos/switch/
+switch luces_exterior_planta_baja_gradas_planta_baja_a_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Planta-baja/Areas/Gradas-planta-baja-a-segunda-planta/Integraciones/grupos/switch/
+switch luces_exterior_planta_baja_lavanderia: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Planta-baja/Areas/Lavanderia/Integraciones/grupos/switch/
+switch luces_exterior_segunda_planta_gradas_segunda_planta_a_planta_baja: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Segunda-planta/Areas/Gradas-segunda-planta-a-planta-baja/Integraciones/grupos/switch/
+switch luces_exterior_segunda_planta_gradas_segunda_planta_a_tercera_planta: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Segunda-planta/Areas/Gradas-segunda-planta-a-tercera-planta/Integraciones/grupos/switch/
+switch luces_exterior_tercera_planta_terraza: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Tercera-planta/Areas/Terraza/Integraciones/grupos/switch/
+switch luces_interior_segunda_planta_banio: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Banio/Integraciones/grupos/switch/
+switch luces_interior_segunda_planta_cocina: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Cocina/Integraciones/grupos/switch/
+switch luces_interior_segunda_planta_cuarto_squishpe: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Cuarto-squishpe/Integraciones/grupos/switch/
+switch luces_interior_segunda_planta_estudio: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Estudio/Integraciones/grupos/switch/
+switch luces_interior_segunda_planta_recibidor: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Recibidor/Integraciones/grupos/switch/
+switch luces_interior_segunda_planta_sala: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Sala/Integraciones/grupos/switch/
 sensor temperatura_exterior: !include_dir_merge_list ismart/principal/Zonas/Exterior/Integraciones/grupos/Temperatura/
 sensor temperatura_interior: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/Temperatura/
 sensor temperatura_tercera_planta: !include_dir_merge_list ismart/principal/Zonas/Exterior/Ubicacion/Tercera-planta/Integraciones/grupos/Temperatura/
@@ -58,6 +58,6 @@ sensor temperatura_sala: !include_dir_merge_list ismart/principal/Zonas/Interior
 sensor humedad_interior: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/Humedad/
 sensor humedad_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Integraciones/grupos/Humedad/
 sensor humedad_sala: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Sala/Integraciones/grupos/Humedad/
-#sensor cortinas_interior: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/Cortinas/
-#sensor cortinas_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Integraciones/grupos/Cortinas/
-#sensor cortinas_estudio: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Estudio/Integraciones/grupos/Cortinas/
+cover cortinas_interior: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/Cortinas/
+cover cortinas_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Integraciones/grupos/Cortinas/
+cover cortinas_estudio: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Estudio/Integraciones/grupos/Cortinas/
