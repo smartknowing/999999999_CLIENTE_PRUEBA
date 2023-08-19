@@ -169,6 +169,12 @@
         cards:
         - type: custom:button-card
           template: card_generic
+          entity: sensor.temperatura_exterior
+          variables:
+            ulm_card_generic_name: Temperatura Exterior
+            ulm_card_generic_icon: mdi:home-thermometer
+        - type: custom:button-card
+          template: card_generic
           entity: sensor.temperatura_interior
           variables:
             ulm_card_generic_name: Temperatura Interior
@@ -185,6 +191,12 @@
       cards:
       - type: vertical-stack
         cards:
+        - type: custom:button-card
+          template: card_generic
+          entity: sensor.group_sensor_temperatura_tercera-planta
+          variables:
+            ulm_card_generic_name: Temperatura Tercera-planta
+            ulm_card_generic_icon: mdi:home-thermometer
         - type: custom:button-card
           template: card_generic
           entity: sensor.group_sensor_temperatura_segunda-planta
